@@ -1,0 +1,15 @@
+SET SERVEROUTPUT ON
+
+DECLARE
+salary NUMBER(10,2) := 500;
+BEGIN
+
+IF salary >1000
+THEN
+DBMS_OUTPUT.PUT_LINE('You are rich');
+
+ELSE
+DBMS_OUTPUT.PUT_LINE('Work harder');
+END IF;
+
+END;
